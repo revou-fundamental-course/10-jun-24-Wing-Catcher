@@ -11,55 +11,59 @@
 
 </head>
 <body>
+    <!--ini tampilan navigasi / nav-->
     <nav>
         <!--Div Kotak Ikon dan Nama Website-->
-        <div class="box1">
+        <div class="nav_title">
             <img id="nav_logo" src="assets/icon.png">
             <p style="font-weight: 500;display: inline-block; font-size: 1.3em;">Kalkulator Suhu</p>
         </div>
-
-        <!--Div pembungkus tombol-tombol nav-->
-        <div class="box2">
-            <a href="https://instagram.com/wingcatcher_" title="My Instagram Page" target="_blank"><button>Instagram</button></a>
-            <a href="https://github.com/Wing-Catcher" title="My Github page" target="_blank"><button>Github</button></a>
+        <!--Div untuk membungkus tag <p>-->
+        <div class="revou_title">
+            <p>RevoU SEFC - Mini Project</p>
         </div>
+            
     </nav>
 
+    <!--Ini tampilan header-->
     <header>
         <h1 id="judul_header">Kalkulator Konversi Suhu</h1>
         <hr>
-        <p>Kalkulator Celsius ke Fahrenheit adalah alat yang digunakan untuk mengubah nilai suhu dari skala Celsius (°C) ke skala Fahrenheit (°F). Dengan memasukkan suhu dalam Celsius, kalkulator ini akan memberikan nilai yang setara dalam Fahrenheit. Alat ini membantu memudahkan perbandingan dan pemahaman suhu dalam kedua skala tersebut, yang sering digunakan di berbagai negara dan konteks.</p>
+        <p>Kalkulator Celsius ke Fahrenheit adalah alat yang digunakan untuk mengubah nilai suhu dari skala Celsius (&deg;C) ke skala Fahrenheit (&deg;F). Dengan memasukkan suhu dalam Celsius, kalkulator ini akan memberikan nilai yang setara dalam Fahrenheit. Alat ini membantu memudahkan perbandingan dan pemahaman suhu dalam kedua skala tersebut, yang sering digunakan di berbagai negara dan konteks.</p>
     </header>
 
+    <!--Ini tampilan main / utama-->
     <main>
         <!--Tampilan bagian celcius-->
         <section id="celcius">
             <h3>Celcius (&deg;C):</h3>
             <textarea id="inputCelcius" type="text" placeholder="Suhu Celcius"></textarea><br>
-            <a><button id="convertButton">Convert (°C) to (°F)</button></a>
+            <a><button class="green" id="convertButton">Convert (&deg;C) to (&deg;F)</button></a>
         </section>
 
         <!--Tampilan bagian Fahrenheit-->
         <section id="fahrenheit">
             <h3>Fahrenheit (&deg;F):</h3>
             <textarea id="outputFahrenheit" type="text" placeholder="Suhu Fahrenheit"></textarea>
-            <a><button id="convertReverse">Reverse (°F) to (°C)</button></a>
+            <a><button class="green" id="convertReverse">Reverse (&deg;F) to (&deg;C)</button></a>
         </section>
 
         <!--Tampilan bagian kalkulasi-->
         <section id="kalkulasi">
             <h3>Cara kalkulasi:</h3>
             <textarea id="formula" type="text" placeholder="Formula kalkulasi" readonly></textarea><br>
-            <a><button id="resetButton">Reset</button></a>
-            <a><button id="copyButton">Copy to Clipboard</button></a>
+            <a><button class="red" id="resetButton">Reset</button></a>
+            <a><button class="blue" id="copyButton">Copy to Clipboard</button></a>
         </section>
     </main>
+
+    <!--Ini tampilan artikel-->
     <article>
-        <h2>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</h2>
-        <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu  <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (°C) kali <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu  <span style="font-size: 1.5em">9/5</span> tambah <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu  <span style="font-size: 1.5em">32</span></p>
-        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°C)</sub> x 9/5) + 32</p>
+        <h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+        <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu  <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (&deg;C) kali <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu  <span style="font-size: 1.5em">9/5</span> tambah <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu  <span style="font-size: 1.5em">32</span></p>
+        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> x 9/5) + 32</p>
         <p>atau</p>
-        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°C)</sub> x 1.8) + 32</p>
+        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> x 1.8) + 32</p>
         <br><hr>
 
         <h2>Apa itu Celcius?</h2>
@@ -74,11 +78,17 @@
     <footer>
         <img id="profile" src="assets/profile.jpg" height="">
         <p>Created by: Raffy Ahmad Jaliyyan</p>
+        <!--Div pembungkus tombol-tombol nav-->
+        <div class="footer_buttons">
+            <a href="https://instagram.com/wingcatcher_" title="My Instagram Page" target="_blank"><button class="magenta">Instagram</button></a>
+            <a href="https://github.com/Wing-Catcher" title="My Github page" target="_blank"><button class="black">Github</button></a>
+            <a href="https://github.com/revou-fundamental-course/10-jun-24-Wing-Catcher" title="Source Code" target="_blank"><button class="black">Source Code</button></a>
+        </div>
     </footer>
         <!--Link file javascript-->
     <script src="js/script.js"></script>
 
     <!--Dibuat oleh Raffy Ahmad Jaliyyan
-    Saya sangat menghargai Anda jika Anda tidak Copy-Paste project saya tanpa izin-->
+    SAYA SANGAT MENGHARGAI ANDA JIKA ANDA TIDAK COPY-PASTE PROJECT SAYA TANPA IZIN-->
 </body>
 </html>

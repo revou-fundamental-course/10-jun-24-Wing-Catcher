@@ -62,4 +62,4 @@ document.getElementById('resetButton').addEventListener('click', resetValues);
 document.getElementById('copyButton').addEventListener('click', copyToClipboard);
 
 //Dibuat oleh Raffy Ahmad Jaliyyan//
-//Saya sangat menghargai Anda jika Anda tidak Copy-Paste project saya tanpa izin//
+//SAYA SANGAT MENGHARGAI ANDA JIKA ANDA TIDAK COPY-PASTE PROJECT SAYA TANPA IZIN//

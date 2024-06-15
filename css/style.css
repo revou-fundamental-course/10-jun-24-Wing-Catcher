@@ -7,15 +7,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button{
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     border: none;
+    transform: scale(0.9);
+    transition: all 0.2s;
 }
-button:hover{
-    background-color: rgb(75, 204, 0);
-    color: aliceblue;
-}
-
 /*Daerah bagian nav / navigasi*/
 nav {
     position: sticky;
@@ -28,20 +25,20 @@ nav {
     background-color: aliceblue;
     box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.5);
 }
-.box1 {
-    margin-left: 30px;
+.nav_title {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 30px;
+}
+.revou_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
 }
 #nav_logo {
     height: 90%;
-}
-.box2 {
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 /*Bagian Daerah header*/
@@ -51,12 +48,16 @@ header {
     margin: 30px;
     padding: 10px;
     border-radius: 10px;
+    transform: scale(0.5);
+    animation: fadeInScale 1s forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
 }
 #judul_header {
     font-weight: 100;
 }
 
-/*Bagian daerah main*/
+/*Bagian daerah main (daerah input kalkulator)*/
 main{
     background-color: rgba(2, 2, 2, 0.274);
     backdrop-filter: blur(5px);
@@ -64,10 +65,14 @@ main{
     margin: 30px;
     padding: 10px;
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: center;
+    align-content:center;
     flex-wrap: wrap;
     gap: 30px;
+    transform: scale(0.5);
+    animation: fadeInScale 1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 section {
     width: 500px;
@@ -84,9 +89,13 @@ textarea {
     font-family: monospace;
     font-size: 1.5em;
     color: aliceblue;
+    transition: all 0.2s
 }
 textarea:hover {
     background-color: rgba(0, 0, 0, 0.137);
+}
+textarea:focus {
+    transform: scale(1.05);
 }
 
 /*Bagian daerah article*/
@@ -96,22 +105,73 @@ article{
     border-radius: 10px;
     margin: 30px;
     padding: 10px;
+    transform: scale(0.5);
+    animation: fadeInScale 1s forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
 }
 
 /*Bagian daerah footer*/
 footer{
     display: flex;
-    background-color: rgba(2, 2, 2, 0.6);
+    background-color: rgb(100, 105, 110);
     backdrop-filter: blur(5px);
     padding: 10px;
     height: 50px;
     gap: 20px;
     justify-content: center;
+    align-items: center;
+}
+.footer_buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 #profile {
     height: 100%;
     border-radius: 8px;
+    transition:all 0.2s;
+}
+#profile:hover {
+    border-radius: 50px;
+    transform: scale(1.2);
+}
+
+/*Warna warna tombol*/
+.green:hover{
+    background-color: rgb(75, 204, 0);
+    color: aliceblue;
+    transform: scale(1);
+}
+.red:hover{
+    background-color: rgb(204, 41, 0);
+    color: aliceblue;
+    transform: scale(1);
+}
+.blue:hover{
+    background-color: rgb(0, 105, 204);
+    color: aliceblue;
+    transform: scale(1);
+}
+.magenta:hover{
+    background: rgb(255,0,230);
+    background: linear-gradient(90deg, rgba(255,0,230,1) 0%, rgba(255,66,0,1) 50%, rgba(234,255,0,1) 100%);
+    color: aliceblue;
+    transform: scale(1);
+}
+.black:hover{
+    background-color: rgb(30,30,30);
+    color: aliceblue;
+    transform: scale(1);
+}
+/*Animasi ketika web dibuka*/
+@keyframes fadeInScale{
+    to {
+        opacity: 1;
+        transform: scale(1);
+        /*Applied for header, main, article*/
+    }
 }
 
 /*Dibuat oleh Raffy Ahmad Jaliyyan
-Saya sangat menghargai Anda jika Anda tidak Copy-Paste project saya tanpa izin*/
+SAYA SANGAT MENGHARGAI ANDA JIKA ANDA TIDAK COPY-PASTE PROJECT SAYA TANPA IZIN*/
