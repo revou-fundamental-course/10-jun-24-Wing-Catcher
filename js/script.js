@@ -35,6 +35,20 @@ function resetValues() {
     document.getElementById('formula').value = '';
 }
 
+function copyToClipboard() {
+    // Ambil nilai dari formula
+    var copyText = document.getElementById("formula");
+  
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+  
+    // Salin teks di dalam bidang teks ke clipboard
+    document.execCommand("copy");
+  
+    // Membuat pesan alert setelah copy berhasil
+    alert("Copied the text: " + copyText.value);
+}
+
 // Tambahkan event listener ke tombol konversi Celsius ke Fahrenheit
 document.getElementById('convertButton').addEventListener('click', convertCelsiusToFahrenheit);
 
@@ -43,3 +57,6 @@ document.getElementById('convertReverse').addEventListener('click', convertFahre
 
 // Tambahkan event listener ke tombol reset
 document.getElementById('resetButton').addEventListener('click', resetValues);
+
+// Tambahkan event listener ke tombol Copy to Clipboard
+document.getElementById('copyButton').addEventListener('click', copyToClipboard);

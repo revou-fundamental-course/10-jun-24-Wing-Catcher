@@ -15,7 +15,7 @@
         <!--Div Kotak Ikon dan Nama Website-->
         <div class="box1">
             <img id="nav_logo" src="assets/icon.png">
-            <p style="display: inline-block; font-size: 1em;">Kalkulator Suhu</p>
+            <p style="font-weight: 500;display: inline-block; font-size: 1.3em;">Kalkulator Suhu</p>
         </div>
 
         <!--Div pembungkus tombol-tombol nav-->
@@ -35,25 +35,46 @@
         <section id="celcius">
             <h3>Celcius (&deg;C):</h3>
             <input id="inputCelcius" type="text" placeholder="Suhu Celcius"><br>
-            <a><button id="convertButton">Konversi</button></a>
-            <a><button id="resetButton">Reset</button></a>
-            <a><button id="convertReverse">Reverse (°F) to (°C)</button></a>
+            <a><button id="convertButton">Convert (°C) to (°F)</button></a>
         </section>
 
         <!--Tampilan bagian Fahrenheit-->
         <section id="fahrenheit">
             <h3>Fahrenheit (&deg;F):</h3>
             <input id="outputFahrenheit" type="text" placeholder="Suhu Fahrenheit">
+            <a><button id="convertReverse">Reverse (°F) to (°C)</button></a>
         </section>
 
         <!--Tampilan bagian kalkulasi-->
         <section id="kalkulasi">
             <h3>Cara kalkulasi:</h3>
             <input id="formula" type="text" placeholder="Formula kalkulasi" readonly><br>
+            <a><button id="resetButton">Reset</button></a>
+            <a><button id="copyButton">Copy to Clipboard</button></a>
         </section>
-
-        <!--Link file javascript-->
-        <script src="js/script.js"></script>
     </main>
+    <article>
+        <h2>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</h2>
+        <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu  <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (°C) kali <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu  <span style="font-size: 1.5em">9/5</span> tambah <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu  <span style="font-size: 1.5em">32</span></p>
+        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°C)</sub> x 9/5) + 32</p>
+        <p>atau</p>
+        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1.2em;">(°C)</sub> x 1.8) + 32</p>
+        <br>
+
+        <h2>Apa itu Celcius?</h2>
+        <p>Celcius adalah salah satu skala pengukuran suhu yang paling umum digunakan di dunia. Skala ini dinamai dari Anders Celsius, seorang astronom dan fisikawan Swedia yang hidup pada abad ke-18. Anders Celsius mengembangkan skala termometer Celsius pada tahun 1742, di mana titik beku air adalah 0 derajat Celsius dan titik didih air adalah 100 derajat Celsius pada tekanan standar. Skala ini sangat berguna dalam berbagai aplikasi ilmiah, industri, dan kehidupan sehari-hari karena kepraktisannya dalam mengukur suhu dengan mudah dan akurat.</p>
+        
+        <h2>Apa itu Fahrenheit?</h2>
+        <p>Fahrenheit adalah skala pengukuran suhu lainnya yang sering digunakan di beberapa negara, terutama di Amerika Serikat. Skala ini dinamai dari Daniel Gabriel Fahrenheit, seorang fisikawan dan insinyur Jerman-Polandia yang mengembangkan skala termometer Fahrenheit pada tahun 1724.
+            Skala Fahrenheit menggunakan titik pembekuan air sebagai 32 derajat Fahrenheit dan titik didih air sebagai 212 derajat Fahrenheit pada tekanan standar. Perbedaan utama antara skala Fahrenheit dengan skala Celsius adalah pada titik nol dan peningkatan suhu antar pembekuan dan didih air. Hal ini membuatnya memiliki rentang yang sedikit lebih besar antara titik beku dan didih air dibandingkan dengan skala Celsius.</p>
+    </article>
+
+    <!--Tampilan Footer-->
+    <footer>
+        <img id="profile" src="assets/profile.jpg" height="">
+        <p>Created by: Raffy Ahmad Jaliyyan</p>
+    </footer>
+        <!--Link file javascript-->
+    <script src="js/script.js"></script>
 </body>
 </html>
