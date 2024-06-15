@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+
+    <!--Mentautkan CSS dengan html-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav>
+        <!--Div Kotak Ikon dan Nama Website-->
+        <div class="box1">
+            <img id="nav_logo" src="assets/icon.png">
+            <p style="display: inline-block; font-size: 1em;">Kalkulator Suhu</p>
+        </div>
+
+        <!--Div pembungkus tombol-tombol nav-->
+        <div class="box2">
+            <a href="https://instagram.com/@wingcatcher_" title="My Instagram Page"><button>Instagram</button></a>
+            <a href="https://github.com/Wing-Catcher" title="My Github page"><button>Github</button></a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 id="judul_header">Kalkulator Konversi Suhu</h1>
+        <p>Kalkulator Celsius ke Fahrenheit adalah alat yang digunakan untuk mengubah nilai suhu dari skala Celsius (°C) ke skala Fahrenheit (°F). Dengan memasukkan suhu dalam Celsius, kalkulator ini akan memberikan nilai yang setara dalam Fahrenheit. Alat ini membantu memudahkan perbandingan dan pemahaman suhu dalam kedua skala tersebut, yang sering digunakan di berbagai negara dan konteks.</p>
+    </header>
+
+    <main>
+        <!--Tampilan bagian celcius-->
+        <section id="celcius">
+            <p>Celcius (&deg;C):</p>
+            <input type="text" placeholder="Suhu Celcius"><br>
+            <a><button>Konversi</button></a>
+            <a><button>Reset</button></a>
+            <a><button>Reverse</button></a>
+        </section>
+
+        <!--Tampilan bagian Fahrenheit-->
+        <section id="fahrenheit">
+            <p>Fahrenheit (&deg;F):</p>
+            <input type="text" placeholder="Suhu Fahrenheit">
+        </section>
+
+        <!--Tampilan bagian kalkulasi-->
+        <section id="kalkulasi">
+            <p>Cara kalkulasi:</p>
+            <input type="text" placeholder="Suhu Celcius"><br>
+        </section>
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>
