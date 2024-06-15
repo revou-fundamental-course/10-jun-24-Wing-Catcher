@@ -2,6 +2,8 @@ body {
     margin: 0px;
     background-image: url(/assets/background.jpg);
     background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
