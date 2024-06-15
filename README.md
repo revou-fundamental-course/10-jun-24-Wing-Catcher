@@ -53,7 +53,7 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 ## Acknowledgements
 
 - Icons from Freepik
-- References and guidance from RevoU Fundamental Course and ([w3schools.com]w3schools.com)
+- References and guidance from RevoU Fundamental Course and w3schools.com
 
 ---
 
