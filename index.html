@@ -33,24 +33,26 @@
     <main>
         <!--Tampilan bagian celcius-->
         <section id="celcius">
-            <p>Celcius (&deg;C):</p>
-            <input type="text" placeholder="Suhu Celcius"><br>
-            <a><button>Konversi</button></a>
-            <a><button>Reset</button></a>
-            <a><button>Reverse</button></a>
+            <h3>Celcius (&deg;C):</h3>
+            <input id="inputCelcius" type="text" placeholder="Suhu Celcius"><br>
+            <a><button id="convertButton">Konversi</button></a>
+            <a><button id="resetButton">Reset</button></a>
+            <a><button id="convertReverse">Reverse (°F) to (°C)</button></a>
         </section>
 
         <!--Tampilan bagian Fahrenheit-->
         <section id="fahrenheit">
-            <p>Fahrenheit (&deg;F):</p>
-            <input type="text" placeholder="Suhu Fahrenheit">
+            <h3>Fahrenheit (&deg;F):</h3>
+            <input id="outputFahrenheit" type="text" placeholder="Suhu Fahrenheit">
         </section>
 
         <!--Tampilan bagian kalkulasi-->
         <section id="kalkulasi">
-            <p>Cara kalkulasi:</p>
-            <input type="text" placeholder="Suhu Celcius"><br>
+            <h3>Cara kalkulasi:</h3>
+            <input id="formula" type="text" placeholder="Formula kalkulasi" readonly><br>
         </section>
+
+        <!--Link file javascript-->
         <script src="js/script.js"></script>
     </main>
 </body>
