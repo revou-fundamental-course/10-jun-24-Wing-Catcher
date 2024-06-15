@@ -72,19 +72,20 @@ main{
 section {
     width: 500px;
 }
-input[type=text] {
+textarea {
     width: 100%;
     height: 100px;
     padding: 12px 20px;
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.144);
+    resize: none;
     box-sizing: border-box;
     font-family: monospace;
     font-size: 1.5em;
     color: aliceblue;
 }
-input[type=text]:hover {
+textarea:hover {
     background-color: rgba(0, 0, 0, 0.137);
 }
 
@@ -111,3 +112,6 @@ footer{
     height: 100%;
     border-radius: 8px;
 }
+
+/*Dibuat oleh Raffy Ahmad Jaliyyan
+Saya sangat menghargai Anda jika Anda tidak Copy-Paste project saya tanpa izin*/
