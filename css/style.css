@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-image: url(/assets/background.jpg);
+    background-image: url(../assets/background.jpg);
     background-size: 100%;
     background-color: aliceblue;
     background-attachment: fixed;
@@ -51,7 +51,7 @@ header {
     animation-delay: 0.5s;
 }
 #judul_header {
-    font-weight: 100;
+    font-weight:250
 }
 
 /*Bagian pembungkus dari calc dan calc*/

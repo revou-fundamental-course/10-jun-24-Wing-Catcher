@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="assets/icon2.png">
 
     <!--Mentautkan CSS dengan html-->
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -55,22 +55,22 @@
             <section id="celcius">
                 <h3>Celcius (&deg;C):</h3>
                 <textarea id="inputCelcius" type="text" placeholder="Suhu Celcius"></textarea><br>
-                <a><button class="green" id="convertButton">Convert (&deg;C) to (&deg;F)</button></a>
+                <a title="Convert to Fahrenheit"><button class="green" id="convertButton">Convert (&deg;C) to (&deg;F)</button></a>
             </section>
 
             <!--Tampilan bagian Fahrenheit-->
             <section id="fahrenheit">
                 <h3>Fahrenheit (&deg;F):</h3>
-                <textarea id="outputFahrenheit" type="text" placeholder="Suhu Fahrenheit"></textarea>
-                <a><button class="green" id="convertReverse">Reverse (&deg;F) to (&deg;C)</button></a>
+                <textarea id="outputFahrenheit" type="text" placeholder="Suhu Fahrenheit"></textarea><br>
+                <a title="Convert to Celcius"><button class="green" id="convertReverse">Reverse (&deg;F) to (&deg;C)</button></a>
             </section>
 
             <!--Tampilan bagian kalkulasi-->
             <section id="kalkulasi">
                 <h3>Cara kalkulasi:</h3>
                 <textarea id="formula" type="text" placeholder="Formula kalkulasi" readonly></textarea><br>
-                <a><button class="red" id="resetButton">Reset</button></a>
-                <a><button class="blue" id="copyButton">Copy to Clipboard</button></a>
+                <a title="Reset All Values"><button class="red" id="resetButton">Reset</button></a>
+                <a title="Copy The Value to Clipboard"><button class="blue" id="copyButton">Copy to Clipboard</button></a>
             </section>
         </main>
     </main>
@@ -101,9 +101,9 @@
         
         <!--Div pembungkus tombol-tombol nav-->
         <div class="footer_buttons">
-            <a href="https://instagram.com/wingcatcher_" title="My Instagram Page" target="_blank"><button class="insta">Instagram</button></a>
-            <a href="https://github.com/Wing-Catcher" title="My Github page" target="_blank"><button class="black">Github</button></a>
-            <a href="https://github.com/revou-fundamental-course/10-jun-24-Wing-Catcher" title="Source Code" target="_blank"><button class="black">Source Code</button></a>
+            <a title="My Instagram Page" href="https://instagram.com/wingcatcher_" title="My Instagram Page" target="_blank"><button class="insta">Instagram</button></a>
+            <a title="My Github Page" href="https://github.com/Wing-Catcher" title="My Github page" target="_blank"><button class="black">Github</button></a>
+            <a title="This Website Source Code" href="https://github.com/revou-fundamental-course/10-jun-24-Wing-Catcher" title="Source Code" target="_blank"><button class="black">Source Code</button></a>
         </div>
     </footer>
         <!--Link file javascript-->
