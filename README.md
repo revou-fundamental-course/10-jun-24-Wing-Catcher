@@ -57,4 +57,4 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 
 ---
 
-**Note**: This website is presented in Bahasa Indonesia.
+**Note**: This website is presented in Bahasa Indonesia. I'D REALLY APPRECIATE YOU IF YOU DON'T COPY-PASTE MY PROJECT WITHOUT PERMISSION
