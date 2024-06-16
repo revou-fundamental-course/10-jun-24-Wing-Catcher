@@ -1,31 +1,48 @@
-// Fungsi untuk mengonversi suhu dari Celsius ke Fahrenheit
+// Fungsi untuk konversi Celcius ke Fahrenheit
 function convertCelsiusToFahrenheit() {
-    // Ambil nilai dari input dengan ID 'inputCelcius'
-    var celsius = parseFloat(document.getElementById('inputCelcius').value);
-    
-    // Lakukan konversi Celsius ke Fahrenheit
+    var celsius = document.getElementById('inputCelcius').value;
+    if (isNaN(celsius) || celsius.trim() === '') {
+        document.getElementById('outputFahrenheit').value = "Error";
+        document.getElementById('formula').value = "Error";
+        document.getElementById('copyButton').style.display = 'none';
+        alert('Input harus berupa angka');
+        return;
+    }
+    celsius = parseFloat(celsius);
     var fahrenheit = (celsius * 9/5) + 32;
-    
-    // Tampilkan hasil konversi di input dengan ID 'outputFahrenheit'
-    document.getElementById('outputFahrenheit').value = fahrenheit.toFixed(2); // Menampilkan hingga 2 angka di belakang koma
-    
-    // Update nilai formula
+    document.getElementById('outputFahrenheit').value = fahrenheit.toFixed(2);
     document.getElementById('formula').value = `${celsius} °C × 9/5 + 32 = ${fahrenheit.toFixed(2)} °F`;
+    document.getElementById('copyButton').style.display = 'inline-block';
 }
 
-// Fungsi untuk mengonversi suhu dari Fahrenheit ke Celsius
+// Fungsi untuk konversi Fahrenheit ke Celcius
 function convertFahrenheitToCelsius() {
-    // Ambil nilai dari input dengan ID 'outputFahrenheit'
-    var fahrenheit = parseFloat(document.getElementById('outputFahrenheit').value);
-    
-    // Lakukan konversi Fahrenheit ke Celsius
+    var fahrenheit = document.getElementById('outputFahrenheit').value;
+    if (isNaN(fahrenheit) || fahrenheit.trim() === '') {
+        document.getElementById('inputCelcius').value = "Error";
+        document.getElementById('formula').value = "Error";
+        document.getElementById('copyButton').style.display = 'none';
+        alert('Input harus berupa angka');
+        return;
+    }
+    fahrenheit = parseFloat(fahrenheit);
     var celsius = (fahrenheit - 32) * 5/9;
-    
-    // Tampilkan hasil konversi di input dengan ID 'inputCelcius'
-    document.getElementById('inputCelcius').value = celsius.toFixed(2); // Menampilkan hingga 2 angka di belakang koma
-    
-    // Update nilai formula
+    document.getElementById('inputCelcius').value = celsius.toFixed(2);
     document.getElementById('formula').value = `(${fahrenheit} °F - 32) × 5/9 = ${celsius.toFixed(2)} °C`;
+    document.getElementById('copyButton').style.display = 'inline-block';
+}
+
+// Fungsi untuk menyalin nilai di Formula
+function copyToClipboard() {
+    var copyText = document.getElementById("formula");
+    if (copyText.value.trim() === '' || copyText.value === 'Error') {
+        alert("Tidak ada teks yang valid untuk disalin");
+        return;
+    }
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Copied the text: " + copyText.value);
 }
 
 // Fungsi untuk mereset nilai semua textbox
@@ -34,18 +51,15 @@ function resetValues() {
     document.getElementById('outputFahrenheit').value = '';
     document.getElementById('formula').value = '';
 }
-
 function copyToClipboard() {
-    // Ambil nilai dari formula
     var copyText = document.getElementById("formula");
-  
+    if (copyText.value.trim() === '') {
+        alert("Tidak ada teks untuk disalin");
+        return;
+    }
     copyText.select();
     copyText.setSelectionRange(0, 99999);
-  
-    // Salin teks di dalam bidang teks ke clipboard
     document.execCommand("copy");
-  
-    // Membuat pesan alert setelah copy berhasil
     alert("Copied the text: " + copyText.value);
 }
 

@@ -164,11 +164,23 @@ footer{
     align-items: center;
     gap: 5px;
 }
-.footer_buttons {
+.footer_links {
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
+.image_link {
+    height: 50px;
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+.image_link:hover {
+    height: 50px;
+    transform: scale(1);
+}
+
 #profile {
     height: 50px;
     border-radius: 8px;
@@ -181,17 +193,17 @@ footer{
 
 /*Warna warna tombol*/
 .green:hover{
-    background-color: rgb(75, 204, 0);
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
     color: aliceblue;
     transform: scale(1);
 }
 .red:hover{
-    background-color: rgb(204, 41, 0);
+    background-color: rgb(221, 44, 0);
     color: aliceblue;
     transform: scale(1);
 }
 .blue:hover{
-    background-color: rgb(0, 105, 204);
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     color: aliceblue;
     transform: scale(1);
 }
