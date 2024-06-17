@@ -50,7 +50,7 @@ Kontribusi sangat dipersilakan! Jika Anda memiliki saran, perbaikan, atau memper
 5. Push ke branch Anda (`git push origin feature/your-feature`).
 6. Buka Pull Request.
 
-## Pengakuan
+## Kredit
 
 - Ikon dari Freepik
 - Referensi dan panduan dari Kursus Fundamental RevoU dan w3schools.com
