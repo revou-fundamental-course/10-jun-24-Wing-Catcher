@@ -52,7 +52,8 @@ Kontribusi sangat dipersilakan! Jika Anda memiliki saran, perbaikan, atau memper
 
 ## Kredit
 
-- Ikon dari Freepik
+- Ikon dari Microsoft Designer
+- Wallpaper dari wallpapersmug.com
 - Referensi dan panduan dari Kursus Fundamental RevoU dan w3schools.com
 
 ---
