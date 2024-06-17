@@ -110,7 +110,7 @@ header {
 }
 
 section {
-    width: 500px;
+    width: 100%;
 }
 
 textarea {
@@ -205,29 +205,30 @@ footer {
 }
 
 /* Warna warna tombol */
-.grad1:hover {
-    background: rgb(211, 205, 199);
-    background: linear-gradient(90deg, rgba(211, 205, 199, 1) 0%, rgba(85, 103, 115, 1) 100%);
+.grad_green:hover {
+    background: rgb(34, 139, 34);
+    background: linear-gradient(90deg, rgba(34, 139, 34, 1) 0%, rgba(144, 238, 144, 1) 100%);
     color: ghostwhite;
     transform: scale(1);
 }
 
-.grad2:hover {
+.grad_darkblue:hover {
     background: rgb(42, 77, 91);
     background: linear-gradient(90deg, rgba(42, 77, 91, 1) 0%, rgba(112, 158, 159, 1) 100%);
     color: aliceblue;
     transform: scale(1);
 }
 
-.red:hover {
-    background: rgb(255, 0, 0);
-    background-color: red;
+.grad_red:hover {
+    background: rgb(165, 42, 42);
+    background: linear-gradient(90deg, rgba(165, 42, 42, 1) 0%, rgba(255, 99, 71, 1) 100%);
     color: aliceblue;
     transform: scale(1);
 }
 
-.black:hover {
-    background-color: rgb(30, 30, 30);
+.grad_black:hover {
+    background: rgb(40, 40, 40);
+    background: linear-gradient(90deg, rgba(40, 40, 40, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: aliceblue;
     transform: scale(1);
 }
