@@ -5,7 +5,7 @@ function convertCelsiusToFahrenheit() {
         document.getElementById('outputFahrenheit').value = "Error";
         document.getElementById('formula').value = "Error";
         document.getElementById('copyButton').style.display = 'none';
-        alert('Input harus berupa angka');
+        alert('Input invalid (Cek kembali input anda)');
         return;
     }
     celsius = parseFloat(celsius);
@@ -22,7 +22,7 @@ function convertFahrenheitToCelsius() {
         document.getElementById('inputCelcius').value = "Error";
         document.getElementById('formula').value = "Error";
         document.getElementById('copyButton').style.display = 'none';
-        alert('Input harus berupa angka');
+        alert('Input invalid (Cek kembali input anda)');
         return;
     }
     fahrenheit = parseFloat(fahrenheit);
@@ -60,7 +60,7 @@ function copyToClipboard() {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+    alert("Formula berhasil disalin: " + copyText.value);
 }
 
 // Tambahkan event listener ke tombol konversi Celsius ke Fahrenheit
