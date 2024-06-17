@@ -1,60 +1,60 @@
-# Celsius to Fahrenheit Converter
+# Konverter Celsius ke Fahrenheit
 
-## Description
+## Deskripsi
 
-The Celsius to Fahrenheit Converter is a simple web application that allows users to convert temperatures between Celsius and Fahrenheit. This tool provides quick and accurate conversions for anyone needing to switch between these temperature scales.
+Konverter Celsius ke Fahrenheit adalah aplikasi web sederhana yang memungkinkan pengguna untuk mengonversi suhu antara Celsius dan Fahrenheit. Alat ini menyediakan konversi yang cepat dan akurat bagi siapa pun yang membutuhkan untuk beralih antara skala suhu ini.
 
-## Features
+## Fitur
 
-- Convert Celsius to Fahrenheit and vice versa.
-- User-friendly interface with clear input and output fields.
-- Responsive design, suitable for various devices and screen sizes.
+- Mengonversi Celsius ke Fahrenheit dan sebaliknya.
+- Antarmuka yang ramah pengguna dengan bidang input dan output yang jelas.
+- Desain responsif, cocok untuk berbagai perangkat dan ukuran layar.
 
-## Technologies Used
+## Teknologi yang Digunakan
 
 - HTML
 - CSS
 - JavaScript
 
-## Getting Started
+## Memulai
 
-To use the Celsius to Fahrenheit Converter locally, follow these steps:
+Untuk menggunakan Konverter Celsius ke Fahrenheit secara lokal, ikuti langkah-langkah berikut:
 
-### Prerequisites
+### Prasyarat
 
-- Web browser (Chrome, Firefox, Safari, etc.)
+- Browser web (Chrome, Firefox, Safari, dll.)
 
-### Installation
+### Instalasi
 
-1. Clone the repository:
+1. Clone repositori:
    ```sh
    git clone https://github.com/your_username/celsius-to-fahrenheit.git
    ```
 
-2. Open `index.html` in your preferred web browser.
+2. Buka file `index.html` di browser web pilihan Anda.
 
-## Usage
+## Penggunaan
 
-1. Enter a temperature value in either Celsius or Fahrenheit.
-2. Click the "Convert" button.
-3. The converted temperature will be displayed instantly.
+1. Masukkan nilai suhu dalam Celsius atau Fahrenheit.
+2. Klik tombol "Convert".
+3. Hasil konversi suhu akan ditampilkan secara instan.
 
-## Contributing
+## Kontribusi
 
-Contributions are welcome! If you have suggestions, improvements, or bug fixes, please follow these steps:
+Kontribusi sangat dipersilakan! Jika Anda memiliki saran, perbaikan, atau memperbaiki bug, silakan ikuti langkah-langkah ini:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature`).
-6. Open a Pull Request.
+1. Fork repositori ini.
+2. Buat branch baru (`git checkout -b feature/your-feature`).
+3. Lakukan perubahan Anda.
+4. Commit perubahan Anda (`git commit -am 'Add some feature'`).
+5. Push ke branch Anda (`git push origin feature/your-feature`).
+6. Buka Pull Request.
 
-## Acknowledgements
+## Pengakuan
 
-- Icons from Freepik
-- References and guidance from RevoU Fundamental Course and w3schools.com
+- Ikon dari Freepik
+- Referensi dan panduan dari Kursus Fundamental RevoU dan w3schools.com
 
 ---
 
-**Note**: This website is presented in Bahasa Indonesia.
+**Catatan**: Situs web ini disajikan dalam Bahasa Indonesia.
