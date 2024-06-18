@@ -20,88 +20,63 @@
         </div>
     </nav>
 
-    <!-- Tampilan header -->
-    <header class="blur">
-        <h1 id="judul_header">Kalkulator Konversi Suhu</h1>
-        <a href="#calc"><button class="grad_darkblue">Scroll to Calculator</button></a>
-        <hr>
-        <p>Kalkulator Celsius ke Fahrenheit adalah alat yang digunakan untuk mengubah nilai suhu dari skala Celsius (&deg;C) ke skala Fahrenheit (&deg;F). Dengan memasukkan suhu dalam Celsius, kalkulator ini akan memberikan nilai yang setara dalam Fahrenheit. Alat ini membantu memudahkan perbandingan dan pemahaman suhu dalam kedua skala tersebut, yang sering digunakan di berbagai negara dan konteks.</p>
-    </header>
+    <div class="container">
+        <!-- Tampilan header -->
+        <header class="blur shadowed">
+            <h1 id="judul_header">Kalkulator Konversi Suhu</h1>
+            <a href="#calc"><button class="grad_darkblue">Scroll to Calculator</button></a>
+            <hr>
+            <p>Kalkulator Celsius ke Fahrenheit adalah alat yang digunakan untuk mengubah nilai suhu dari skala Celsius (&deg;C) ke skala Fahrenheit (&deg;F). Dengan memasukkan suhu dalam Celsius, kalkulator ini akan memberikan nilai yang setara dalam Fahrenheit. Alat ini membantu memudahkan perbandingan dan pemahaman suhu dalam kedua skala tersebut, yang sering digunakan di berbagai negara dan konteks.</p>
+        </header>
 
-    <!-- Pembungkus kalkulator dan cara penggunaan (main dan side) -->
-    <main class="box">
-        <article class="side blur">
-            <h2 class="max_width">Cara Penggunaan</h2>
-            <h3 class="max_width">Celcius ke Fahrenheit</h3>
-            <ol>
-                <li><p>Masukkan suhu Celcius pada kolom "Suhu Celcius".</p></li>
-                <li><p>Tekan tombol "Convert" untuk memulai proses konversi.</p></li>
-                <li><p>Hasil konversi akan ditampilkan di kolom teks "Fahrenheit".</p></li>
-                <li><p>Cara kalkulasi (formula) akan ditampilkan di kolom "Formula".</p></li>
-                <li><p>Tombol "Clip to Clipboard" akan menyalin nilai yang ada di kolom "Formula".</p></li>
-            </ol>
-            
-            <h3 class="max_width">Fahrenheit ke Celcius</h3>
-            <ol>
-                <li><p>Masukkan suhu Fahrenheit pada kolom "Suhu Fahrenheit".</p></li>
-                <li><p>Tekan tombol "Reverse" untuk memulai proses konversi.</p></li>
-                <li><p>Hasil konversi akan ditampilkan di kolom teks "Celcius".</p></li>
-                <li><p>Cara kalkulasi (formula) akan ditampilkan di kolom "Formula".</p></li>
-                <li><p>Tombol "Clip to Clipboard" akan menyalin nilai yang ada di kolom "Formula".</p></li>
-            </ol>
-            
-        </article>
-
-        <main id="calc" class="calc blur">
+        <!--Pembungkus kalkulator utama-->
+        <main class="calc blur shadowed">
             <!-- Tampilan bagian celcius -->
             <section id="celcius">
                 <h3>Celcius (&deg;C):</h3>
                 <textarea id="inputCelcius" type="text" placeholder="Suhu Celcius"></textarea><br>
-                <a title="Convert to Fahrenheit"><button class="grad_green" id="convertButton">Convert (&deg;C) to (&deg;F)</button></a>
+                <a title="Convert to Fahrenheit"><button class="grad_green  calc_buttons" id="convertButton">Convert (&deg;C) to (&deg;F)</button></a>
             </section>
-
             <!-- Tampilan bagian Fahrenheit -->
             <section id="fahrenheit">
                 <h3>Fahrenheit (&deg;F):</h3>
                 <textarea id="outputFahrenheit" type="text" placeholder="Suhu Fahrenheit"></textarea><br>
-                <a title="Convert to Celcius"><button class="grad_green" id="convertReverse">Reverse (&deg;F) to (&deg;C)</button></a>
+                <a title="Convert to Celcius"><button class="grad_green calc_buttons" id="convertReverse">Reverse (&deg;F) to (&deg;C)</button></a>
             </section>
-
             <!-- Tampilan bagian kalkulasi -->
             <section id="kalkulasi">
                 <h3>Cara kalkulasi:</h3>
                 <textarea id="formula" type="text" placeholder="Formula kalkulasi" readonly></textarea><br>
-                <a title="Reset All Values"><button class="grad_red" id="resetButton">Reset</button></a>
-                <a title="Copy The Value to Clipboard"><button class="grad_darkblue" id="copyButton">Copy to Clipboard</button></a>
+                <a title="Reset All Values"><button class="grad_red calc_buttons" id="resetButton">Reset</button></a>
+                <a title="Copy The Value to Clipboard"><button class="grad_darkblue  calc_buttons" id="copyButton">Copy</button></a>
             </section>
         </main>
-    </main>
 
-    <!-- Tampilan artikel -->
-    <article class="article2 blur">
-        <h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
-        <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (&deg;C) kali <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: 1.5em">9/5</span> tambah <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: 1.5em">32</span></p>
-        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> x 9/5) + 32</p>
-        <p>atau</p>
-        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> x 1.8) + 32</p>
-        
-        <hr>
+        <!-- Tampilan artikel -->
+        <article class="article2 blur shadowed">
+            <h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+            <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (&deg;C) kali <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: 1.5em">9/5</span> tambah <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: 1.5em">32</span></p>
+            <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> x 9/5) + 32</p>
+            <p>atau</p>
+            <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> x 1.8) + 32</p>
+            
+            <hr>
 
-        <h2>Cara Konversi Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h2>
-        <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) dikurangi <span style="font-size: 1.5em; font-style: italic;">32</span>, kemudian dibagi <span style="font-size: 1.5em">5/9</span>.</p>
-        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> - 32) x 5/9</p>
-        <p>atau</p>
-        <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> - 32) x 0.5556</p>
+            <h2>Cara Konversi Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h2>
+            <p>Suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span style="font-size: 1.5em; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) dikurangi <span style="font-size: 1.5em; font-style: italic;">32</span>, kemudian dibagi <span style="font-size: 1.5em">5/9</span>.</p>
+            <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> - 32) x 5/9</p>
+            <p>atau</p>
+            <p style="font-size: 1.2em;"><span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;C)</sub> = (<span style="font-size: 1.5em; font-style: italic;">S</span><sub style="font-size: 1em;">(&deg;F)</sub> - 32) x 0.5556</p>
 
-        <hr>
+            <hr>
 
-        <h2>Apa itu Celcius?</h2>
-        <p>Celcius adalah salah satu skala pengukuran suhu yang paling umum digunakan di dunia. Skala ini dinamai dari Anders Celsius, seorang astronom dan fisikawan Swedia yang hidup pada abad ke-18. Anders Celsius mengembangkan skala termometer Celsius pada tahun 1742, di mana titik beku air adalah 0 derajat Celsius dan titik didih air adalah 100 derajat Celsius pada tekanan standar. Skala ini sangat berguna dalam berbagai aplikasi ilmiah, industri, dan kehidupan sehari-hari karena kepraktisannya dalam mengukur suhu dengan mudah dan akurat.</p>
+            <h2>Apa itu Celcius?</h2>
+            <p>Celcius adalah salah satu skala pengukuran suhu yang paling umum digunakan di dunia. Skala ini dinamai dari Anders Celsius, seorang astronom dan fisikawan Swedia yang hidup pada abad ke-18. Anders Celsius mengembangkan skala termometer Celsius pada tahun 1742, di mana titik beku air adalah 0 derajat Celsius dan titik didih air adalah 100 derajat Celsius pada tekanan standar. Skala ini sangat berguna dalam berbagai aplikasi ilmiah, industri, dan kehidupan sehari-hari karena kepraktisannya dalam mengukur suhu dengan mudah dan akurat.</p>
 
-        <h2>Apa itu Fahrenheit?</h2>
-        <p>Fahrenheit adalah skala pengukuran suhu lainnya yang sering digunakan di beberapa negara, terutama di Amerika Serikat. Skala ini dinamai dari Daniel Gabriel Fahrenheit, seorang fisikawan dan insinyur Jerman-Polandia yang mengembangkan skala termometer Fahrenheit pada tahun 1724. Skala Fahrenheit menggunakan titik pembekuan air sebagai 32 derajat Fahrenheit dan titik didih air sebagai 212 derajat Fahrenheit pada tekanan standar. Perbedaan utama antara skala Fahrenheit dengan skala Celsius adalah pada titik nol dan peningkatan suhu antar pembekuan dan didih air. Hal ini membuatnya memiliki rentang yang sedikit lebih besar antara titik beku dan didih air dibandingkan dengan skala Celsius.</p>
-    </article>
-
+            <h2>Apa itu Fahrenheit?</h2>
+            <p>Fahrenheit adalah skala pengukuran suhu lainnya yang sering digunakan di beberapa negara, terutama di Amerika Serikat. Skala ini dinamai dari Daniel Gabriel Fahrenheit, seorang fisikawan dan insinyur Jerman-Polandia yang mengembangkan skala termometer Fahrenheit pada tahun 1724. Skala Fahrenheit menggunakan titik pembekuan air sebagai 32 derajat Fahrenheit dan titik didih air sebagai 212 derajat Fahrenheit pada tekanan standar. Perbedaan utama antara skala Fahrenheit dengan skala Celsius adalah pada titik nol dan peningkatan suhu antar pembekuan dan didih air. Hal ini membuatnya memiliki rentang yang sedikit lebih besar antara titik beku dan didih air dibandingkan dengan skala Celsius.</p>
+        </article>
+    </div>
     <!-- Tampilan Footer -->
     <footer>
         <div class="footer_profile">

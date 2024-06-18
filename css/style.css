@@ -44,6 +44,11 @@ nav {
     height: 90%;
 }
 
+.container{
+    width: 800px;
+    margin: auto;
+}
+
 /* Bagian Daerah header */
 header {
     background-color: rgba(2, 2, 2, 0.274);
@@ -60,49 +65,13 @@ header {
     font-weight: 250;
 }
 
-/* Bagian pembungkus dari calc dan calc */
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 30px;
-    margin-right: 30px;
-    gap: 30px;
-    justify-content: center;
-}
-
-/* Cara Penggunaan */
-.side {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: fit-content;
-    justify-content: flex-start;
-    flex: 1;
-    background-color: rgba(2, 2, 2, 0.274);
-    border-radius: 10px;
-    padding: 30px;
-    width: 100%;
-    box-sizing: border-box;
-    transform: scale(0.5);
-    animation: fadeInScale 1s forwards;
-    opacity: 0;
-    animation-delay: 1s;
-}
-.max_width{
-    width: 100%;
-}
-
 /* Kalkulator Utama */
 .calc {
     background-color: rgba(2, 2, 2, 0.274);
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 10px;
-    box-sizing: border-box;
-    max-width: fit-content;
     padding: 10px;
-    display: flex;
-    width: 100%;
-    flex: 1;
-    flex-wrap: wrap;
-    gap: 30px;
     transform: scale(0.5);
     animation: fadeInScale 1s forwards;
     opacity: 0;
@@ -115,7 +84,7 @@ section {
 
 textarea {
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding: 12px 20px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -210,6 +179,7 @@ footer {
     background: linear-gradient(90deg, rgba(34, 139, 34, 1) 0%, rgba(144, 238, 144, 1) 100%);
     color: ghostwhite;
     transform: scale(1);
+    border-radius: 100px;
 }
 
 .grad_darkblue:hover {
@@ -217,6 +187,7 @@ footer {
     background: linear-gradient(90deg, rgba(42, 77, 91, 1) 0%, rgba(112, 158, 159, 1) 100%);
     color: aliceblue;
     transform: scale(1);
+    border-radius: 100px;
 }
 
 .grad_red:hover {
@@ -224,6 +195,7 @@ footer {
     background: linear-gradient(90deg, rgba(165, 42, 42, 1) 0%, rgba(255, 99, 71, 1) 100%);
     color: aliceblue;
     transform: scale(1);
+    border-radius: 100px;
 }
 
 .grad_black:hover {
@@ -231,6 +203,27 @@ footer {
     background: linear-gradient(90deg, rgba(40, 40, 40, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: aliceblue;
     transform: scale(1);
+    border-radius: 100px;
+}
+.shadowed{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Make container full width */
+    }
+    .calc_buttons{
+        width: 45%;
+    }
+    section {
+        width: 100%;
+        text-align: center;
+    }
+    textarea {
+        font-size: 15px;
+        width: 100%
+    }
 }
 
 /* Animasi ketika web dibuka */
