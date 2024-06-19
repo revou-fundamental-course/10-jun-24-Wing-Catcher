@@ -33,11 +33,21 @@ nav {
     background-color: aliceblue;
     box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.5);
 }
+nav p{
+    display: flex;
+    align-items: center;
+}
 
 .nav_title {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.nav_title p{
+    font-weight: 500;
+    display: inline-block;
+    font-size: 1.3em;
 }
 
 #nav_logo {
@@ -209,9 +219,10 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
 }
 
+/* Mobile View Support */
 @media (max-width: 600px) {
     .container {
-        width: 100%; /* Make container full width */
+        width: 100%; 
     }
     .calc_buttons{
         width: 45%;
@@ -223,6 +234,20 @@ footer {
     textarea {
         font-size: 15px;
         width: 100%
+    }
+    nav{
+        height: 40px;
+    }
+    nav p{
+        font-size: 0.75em;
+    }
+    .nav_title p{
+        font-weight: 500;
+        display: inline-block;
+        font-size: 1em;
+    }
+    .nav_title{
+        gap: 5px;
     }
 }
 
