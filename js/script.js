@@ -1,11 +1,11 @@
-// Fungsi untuk konversi Celcius ke Fahrenheit
+// Fungsi untuk konversi Celcius ke Fahrenheit | Function for converting Celsius to Fahrenheit
 function convertCelsiusToFahrenheit() {
     var celsius = document.getElementById('inputCelcius').value;
     if (isNaN(celsius) || celsius.trim() === '') {
         document.getElementById('outputFahrenheit').value = "Error";
         document.getElementById('formula').value = "Error";
         document.getElementById('copyButton').style.display = 'none';
-        alert('Input invalid (Cek kembali input anda)');
+        alert("Input invalid. (Cek kembali input Anda)");
         return;
     }
     celsius = parseFloat(celsius);
@@ -15,14 +15,14 @@ function convertCelsiusToFahrenheit() {
     document.getElementById('copyButton').style.display = 'inline-block';
 }
 
-// Fungsi untuk konversi Fahrenheit ke Celcius
+// Fungsi untuk konversi Fahrenheit ke Celcius | Function for Fahrenheit to Celsius conversion
 function convertFahrenheitToCelsius() {
     var fahrenheit = document.getElementById('outputFahrenheit').value;
     if (isNaN(fahrenheit) || fahrenheit.trim() === '') {
         document.getElementById('inputCelcius').value = "Error";
         document.getElementById('formula').value = "Error";
         document.getElementById('copyButton').style.display = 'none';
-        alert('Input invalid (Cek kembali input anda)');
+        alert("Input invalid. (Cek kembali input Anda)");
         return;
     }
     fahrenheit = parseFloat(fahrenheit);
@@ -32,7 +32,7 @@ function convertFahrenheitToCelsius() {
     document.getElementById('copyButton').style.display = 'inline-block';
 }
 
-// Fungsi untuk menyalin nilai di Formula
+// Fungsi untuk menyalin nilai di Formula | Function to copy values ​​in Formula
 function copyToClipboard() {
     var copyText = document.getElementById("formula");
     if (copyText.value.trim() === '' || copyText.value === 'Error') {
@@ -41,11 +41,11 @@ function copyToClipboard() {
     }
     copyText.select();
     copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
+    document.exeCommand("copy");
     alert("Copied the text: " + copyText.value);
 }
 
-// Fungsi untuk mereset nilai semua textbox
+// Fungsi untuk mereset nilai semua textbox | Function to reset the values ​​of all textboxes
 function resetValues() {
     document.getElementById('inputCelcius').value = '';
     document.getElementById('outputFahrenheit').value = '';
@@ -63,17 +63,20 @@ function copyToClipboard() {
     alert("Formula berhasil disalin: " + copyText.value);
 }
 
-// Tambahkan event listener ke tombol konversi Celsius ke Fahrenheit
+// Tambahkan event listener ke tombol konversi Celsius ke Fahrenheit | Add an event listener to the convert Celsius to Fahrenheit button
 document.getElementById('convertButton').addEventListener('click', convertCelsiusToFahrenheit);
 
-// Tambahkan event listener ke tombol konversi Fahrenheit ke Celsius
+// Tambahkan event listener ke tombol konversi Fahrenheit ke Celsius | Add an event listener to the convert Fahrenheit to Celsius button
 document.getElementById('convertReverse').addEventListener('click', convertFahrenheitToCelsius);
 
-// Tambahkan event listener ke tombol reset
+// Tambahkan event listener ke tombol reset | Add an event listener to the reset button
 document.getElementById('resetButton').addEventListener('click', resetValues);
 
-// Tambahkan event listener ke tombol Copy to Clipboard
+// Tambahkan event listener ke tombol Copy to Clipboard | Add an event listener to the Copy to Clipboard button
 document.getElementById('copyButton').addEventListener('click', copyToClipboard);
 
 //Dibuat oleh Raffy Ahmad Jaliyyan//
 //SAYA SANGAT MENGHARGAI ANDA JIKA ANDA TIDAK COPY-PASTE PROJECT SAYA TANPA IZIN//
+
+//Created by Raffi Ahmad Jaliyyan//
+//I'D REALLY APPRECIATE YOU IF YOU DON'T COPY-PASTE MY PROJECT WITHOUT PERMISSION//
