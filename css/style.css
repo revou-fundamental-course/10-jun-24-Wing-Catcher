@@ -33,9 +33,10 @@ nav {
     background-color: aliceblue;
     box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.5);
 }
-nav p{
+#revou{
     display: flex;
     align-items: center;
+    text-align: right;
 }
 
 .nav_title {
@@ -235,12 +236,15 @@ footer {
         font-size: 15px;
         width: 100%
     }
-    nav{
-        height: 40px;
+    
+    #revou{
+        font-size: 0.90em;
     }
-    nav p{
-        font-size: 0.75em;
+
+    #nav_logo{
+        height: 70%;
     }
+
     .nav_title p{
         font-weight: 500;
         display: inline-block;
