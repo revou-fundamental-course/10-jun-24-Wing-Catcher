@@ -1,5 +1,8 @@
 # Konverter Celsius ke Fahrenheit
 
+Status: Final
+Clones: 48 (20/June/24)
+
 ## Deskripsi
 
 Konverter Celsius ke Fahrenheit adalah aplikasi web sederhana yang memungkinkan pengguna untuk mengonversi suhu antara Celsius dan Fahrenheit. Alat ini menyediakan konversi yang cepat dan akurat bagi siapa pun yang membutuhkan untuk beralih antara skala suhu ini.
