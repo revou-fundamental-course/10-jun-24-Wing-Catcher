@@ -186,6 +186,9 @@ footer {
 }
 
 /* Shadow effect | Efek Bayangan*/
+.shadowed {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+}
 
 /* Button color styles | Gaya Warna Tombol */
 .grad_green:hover {
@@ -225,13 +228,16 @@ footer {
     .container {
         width: 100%;
     }
+
     .calc_buttons {
         width: 45%;
     }
+
     section {
         width: 100%;
         text-align: center;
     }
+    
     textarea {
         font-size: 15px;
         width: 100%;
@@ -250,6 +256,7 @@ footer {
         display: inline-block;
         font-size: 1em;
     }
+
     .nav_title {
         gap: 5px;
     }
