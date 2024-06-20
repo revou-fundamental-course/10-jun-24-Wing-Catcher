@@ -74,9 +74,3 @@ document.getElementById('resetButton').addEventListener('click', resetValues);
 
 // Tambahkan event listener ke tombol Copy to Clipboard | Add an event listener to the Copy to Clipboard button
 document.getElementById('copyButton').addEventListener('click', copyToClipboard);
-
-//Dibuat oleh Raffy Ahmad Jaliyyan//
-//SAYA SANGAT MENGHARGAI ANDA JIKA ANDA TIDAK COPY-PASTE PROJECT SAYA TANPA IZIN//
-
-//Created by Raffi Ahmad Jaliyyan//
-//I'D REALLY APPRECIATE YOU IF YOU DON'T COPY-PASTE MY PROJECT WITHOUT PERMISSION//
