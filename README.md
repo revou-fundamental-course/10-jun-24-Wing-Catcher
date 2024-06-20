@@ -1,7 +1,6 @@
 # Konverter Celsius ke Fahrenheit
 
-Status: Final
-Clones: 48 (20/June/24)
+Status: Final | Clones: 48 (20/June/24)
 
 ## Deskripsi
 
